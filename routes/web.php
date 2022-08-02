@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ReportController;
+use App\Http\Controllers\PDFController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -35,3 +36,6 @@ $router->get('report/ver', [ReportController::class, 'show']);
 $router->get('report/excluir/{id}', [ReportController::class, 'destroy'])->name('exclude');
 $router->get('report/editar/{id}', [ReportController::class, 'edit'])->name('edits');
 $router->post('report/editar/{id}', [ReportController::class, 'update'])->name('updates');
+
+// Email
+Route::get('send-email-pdf', [PDFController::class, 'index']);

@@ -15,8 +15,9 @@ return new class extends Migration
     {
         Schema::create('reports', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('profiles_id')->references('id')->on('profiles');
             $table->string('Title', 45);
-            $table->string('Description', 645);
+            $table->string('Description', 645)->nullable();
             $table->timestamps();
         });
     }

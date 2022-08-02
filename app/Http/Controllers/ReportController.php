@@ -14,8 +14,8 @@ class ReportController extends Controller
      */
     public function index()
     {
-    $crud = Report::all();
-    return $crud;
+    $report = Report::all();
+    return $report;
     }
 
     /**

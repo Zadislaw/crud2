@@ -131,6 +131,7 @@
         <div class="info">
           <input class="fname" type="text" name="title" placeholder="Title" value="{{$report->title}}">
           <input type="text" name="description" placeholder="Description" value="{{$report->description}}">
+          <input type="number" name="profiles_id" placeholder="Adicionar ID do profile" value="{{$report->profiles_id}}">
           <input type="hidden" name="updated_at" value="{{$report->updated_at}}">
           <input type="hidden" name="created_at" value="{{$report->created_at}}">
         </div>

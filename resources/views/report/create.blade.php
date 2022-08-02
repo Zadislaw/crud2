@@ -132,6 +132,7 @@
         <div class="info">
           <input class="fname" type="text" name="title" placeholder="Title">
           <input type="text" name="description" placeholder="Description">
+          <input type="number" name="profiles_id" placeholder="Adicionar ID do profile">
           <input type="hidden" name="updated_at">
           <input type="hidden" name="created_at">
         </div>
